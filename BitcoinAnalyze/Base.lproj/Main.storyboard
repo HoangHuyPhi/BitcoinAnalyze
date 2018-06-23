@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iYJ-Qw-Wue">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainMenuViewController" customModule="BitcoinAnalyze" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gD-d2-mUT" userLabel="Middle container">
+                                <rect key="frame" x="-1" y="218" width="375" height="152"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fop-3k-Orh">
+                                        <rect key="frame" x="43" y="102" width="290" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="2wb-on-ZQ6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="geU-Pt-iTt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Show Bitcoin Price Table's history"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C7-Xn-qk0">
+                                        <rect key="frame" x="43" y="16" width="291" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="YNK-L7-CcG"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="291" id="rsx-D1-x5m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Change Bitcoin Price to Currency "/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fop-3k-Orh" firstAttribute="centerX" secondItem="0gD-d2-mUT" secondAttribute="centerX" id="1zG-I4-rua"/>
+                                    <constraint firstItem="fop-3k-Orh" firstAttribute="centerY" secondItem="0gD-d2-mUT" secondAttribute="centerY" constant="44" id="3eL-hM-IR8"/>
+                                    <constraint firstAttribute="width" constant="375" id="Un5-NI-s0Y"/>
+                                    <constraint firstItem="5C7-Xn-qk0" firstAttribute="centerY" secondItem="0gD-d2-mUT" secondAttribute="centerY" constant="-42" id="iaa-oR-XRg"/>
+                                    <constraint firstItem="5C7-Xn-qk0" firstAttribute="centerX" secondItem="0gD-d2-mUT" secondAttribute="centerX" constant="1" id="x21-tb-ik0"/>
+                                    <constraint firstAttribute="height" constant="152" id="yHb-Xm-WHG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIY-yd-FdD" userLabel="Top container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to Bitcoin Analyze" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dok-eV-L9g">
+                                        <rect key="frame" x="22.5" y="91.5" width="331" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="331" id="TKr-A1-52L"/>
+                                            <constraint firstAttribute="height" constant="36" id="uru-On-lnn"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dok-eV-L9g" firstAttribute="centerX" secondItem="GIY-yd-FdD" secondAttribute="centerX" id="EkG-aV-JyM"/>
+                                    <constraint firstItem="dok-eV-L9g" firstAttribute="centerY" secondItem="GIY-yd-FdD" secondAttribute="centerY" id="XAj-8S-FCQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GIY-yd-FdD" secondAttribute="trailing" id="8Z5-dj-qtv"/>
+                            <constraint firstItem="0gD-d2-mUT" firstAttribute="top" secondItem="GIY-yd-FdD" secondAttribute="bottom" id="Cud-3X-dJx"/>
+                            <constraint firstItem="GIY-yd-FdD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SkU-YJ-4Ut"/>
+                            <constraint firstItem="0gD-d2-mUT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-39.5" id="b31-iR-gMl"/>
+                            <constraint firstItem="GIY-yd-FdD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="la9-aI-xsa"/>
+                            <constraint firstItem="0gD-d2-mUT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="stj-yb-oOO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wZy-fP-oiD">
+            <objects>
+                <viewController id="iYJ-Qw-Wue" customClass="ViewController" customModule="BitcoinAnalyze" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1HK-Jp-aaf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwi-2u-IRz" userLabel="Middle Container">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTk-oU-giq" userLabel="Top Container1b">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Day :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KVO-kW-HC5">
+                                                <rect key="frame" x="7" y="13" width="115" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Week :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SND-Yj-12r">
+                                                <rect key="frame" x="7" y="63" width="115" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kRu-g2-CNl">
+                                                <rect key="frame" x="110" y="118" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8tC-ly-UJQ">
+                                                <rect key="frame" x="110" y="17" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Month :" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQc-Jh-gWV">
+                                                <rect key="frame" x="7" y="114" width="115" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nd5-yK-6Ab">
+                                                <rect key="frame" x="233" y="118" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7BX-gt-YvM">
+                                                <rect key="frame" x="110" y="63" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-Cv-DXF">
+                                                <rect key="frame" x="233" y="16" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9M-Wn-pmi">
+                                                <rect key="frame" x="233" y="67" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZ0-gG-moZ" userLabel="Bottom Container 1b">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="157"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3xj-mP-ocD">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iZ0-gG-moZ" firstAttribute="height" secondItem="TTk-oU-giq" secondAttribute="height" id="FxS-F1-FTP"/>
+                                    <constraint firstItem="TTk-oU-giq" firstAttribute="top" secondItem="qwi-2u-IRz" secondAttribute="top" id="G7r-X5-s1r"/>
+                                    <constraint firstItem="iZ0-gG-moZ" firstAttribute="top" secondItem="TTk-oU-giq" secondAttribute="bottom" constant="19" id="L5h-l3-X1a"/>
+                                    <constraint firstAttribute="bottom" secondItem="iZ0-gG-moZ" secondAttribute="bottom" constant="0.5" id="O9T-Kw-2un"/>
+                                    <constraint firstItem="TTk-oU-giq" firstAttribute="leading" secondItem="qwi-2u-IRz" secondAttribute="leading" id="Oo0-0W-1Dy"/>
+                                    <constraint firstAttribute="trailing" secondItem="TTk-oU-giq" secondAttribute="trailing" id="T7A-RU-kNk"/>
+                                    <constraint firstItem="iZ0-gG-moZ" firstAttribute="top" secondItem="TTk-oU-giq" secondAttribute="bottom" constant="19" id="mfb-qN-IBy"/>
+                                    <constraint firstAttribute="trailing" secondItem="iZ0-gG-moZ" secondAttribute="trailing" id="skS-ec-iwL"/>
+                                    <constraint firstItem="iZ0-gG-moZ" firstAttribute="leading" secondItem="qwi-2u-IRz" secondAttribute="leading" id="ucI-FN-OVj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTc-1O-hno" userLabel="Top Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkk-VV-dpx" userLabel="Top Container1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="166.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="wOu-cV-Yg6">
+                                                <rect key="frame" x="149" y="27" width="76" height="127.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="wOu-cV-Yg6" secondAttribute="trailing" constant="150" id="It4-jE-9Ep"/>
+                                            <constraint firstItem="wOu-cV-Yg6" firstAttribute="leading" secondItem="xkk-VV-dpx" secondAttribute="leading" constant="149" id="NPc-Bx-gAE"/>
+                                            <constraint firstItem="wOu-cV-Yg6" firstAttribute="top" secondItem="xkk-VV-dpx" secondAttribute="top" constant="27" id="t5t-dx-CsB"/>
+                                            <constraint firstAttribute="bottom" secondItem="wOu-cV-Yg6" secondAttribute="bottom" constant="11.5" id="wVu-RH-K9p"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nf0-0K-emc" userLabel="Bottom Container1">
+                                        <rect key="frame" x="0.0" y="166.5" width="375" height="166.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TRENDING" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TEu-LK-P6G">
+                                                <rect key="frame" x="0.0" y="124.5" width="335" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="335" id="7sk-Ob-tPI"/>
+                                                    <constraint firstAttribute="height" constant="25" id="FNF-hD-Aty"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Price" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgX-f6-BF0">
+                                                <rect key="frame" x="-19.5" y="17" width="414" height="63"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="63" id="7fE-r6-1d5"/>
+                                                    <constraint firstAttribute="width" constant="414" id="wd3-JH-8sQ"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cgX-f6-BF0" firstAttribute="centerX" secondItem="nf0-0K-emc" secondAttribute="centerX" id="1hQ-Ki-aSg"/>
+                                            <constraint firstAttribute="bottom" secondItem="TEu-LK-P6G" secondAttribute="bottom" constant="17" id="Sfc-72-XeY"/>
+                                            <constraint firstItem="cgX-f6-BF0" firstAttribute="centerY" secondItem="nf0-0K-emc" secondAttribute="centerY" constant="-35" id="Zmw-mO-MmF"/>
+                                            <constraint firstItem="TEu-LK-P6G" firstAttribute="leading" secondItem="nf0-0K-emc" secondAttribute="leading" id="fsz-wk-tnY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nf0-0K-emc" firstAttribute="leading" secondItem="UTc-1O-hno" secondAttribute="leading" id="GR5-DR-zuM"/>
+                                    <constraint firstAttribute="bottom" secondItem="nf0-0K-emc" secondAttribute="bottom" constant="0.5" id="IAY-QU-LIl"/>
+                                    <constraint firstItem="nf0-0K-emc" firstAttribute="height" secondItem="xkk-VV-dpx" secondAttribute="height" id="Mms-n7-Ueq"/>
+                                    <constraint firstItem="xkk-VV-dpx" firstAttribute="top" secondItem="UTc-1O-hno" secondAttribute="top" id="mJK-HM-Bfc"/>
+                                    <constraint firstAttribute="trailing" secondItem="xkk-VV-dpx" secondAttribute="trailing" id="p0f-f5-8QA"/>
+                                    <constraint firstItem="nf0-0K-emc" firstAttribute="top" secondItem="xkk-VV-dpx" secondAttribute="bottom" id="reB-fs-rzn"/>
+                                    <constraint firstItem="nf0-0K-emc" firstAttribute="top" secondItem="xkk-VV-dpx" secondAttribute="bottom" id="sds-gi-vMq"/>
+                                    <constraint firstAttribute="trailing" secondItem="nf0-0K-emc" secondAttribute="trailing" id="vnv-6i-xcc"/>
+                                    <constraint firstItem="xkk-VV-dpx" firstAttribute="leading" secondItem="UTc-1O-hno" secondAttribute="leading" id="wp6-ms-zrN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="qwi-2u-IRz" firstAttribute="bottom" secondItem="lPT-ii-XMH" secondAttribute="bottom" id="IBV-kM-7cy"/>
+                            <constraint firstItem="UTc-1O-hno" firstAttribute="leading" secondItem="lPT-ii-XMH" secondAttribute="leading" id="Jh4-za-frD"/>
+                            <constraint firstItem="UTc-1O-hno" firstAttribute="top" secondItem="1HK-Jp-aaf" secondAttribute="top" id="KAr-R0-KN4"/>
+                            <constraint firstItem="qwi-2u-IRz" firstAttribute="top" secondItem="UTc-1O-hno" secondAttribute="bottom" id="VSV-7z-VB9"/>
+                            <constraint firstItem="UTc-1O-hno" firstAttribute="trailing" secondItem="lPT-ii-XMH" secondAttribute="trailing" id="Wuh-9S-hKP"/>
+                            <constraint firstItem="qwi-2u-IRz" firstAttribute="leading" secondItem="lPT-ii-XMH" secondAttribute="leading" id="YOA-JO-8zL"/>
+                            <constraint firstItem="qwi-2u-IRz" firstAttribute="height" secondItem="UTc-1O-hno" secondAttribute="height" id="ddm-Gh-E7F"/>
+                            <constraint firstItem="qwi-2u-IRz" firstAttribute="top" secondItem="UTc-1O-hno" secondAttribute="bottom" id="jy9-CW-pMS"/>
+                            <constraint firstItem="qwi-2u-IRz" firstAttribute="trailing" secondItem="lPT-ii-XMH" secondAttribute="trailing" id="wDI-BW-wil"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lPT-ii-XMH"/>
+                    </view>
+                    <connections>
+                        <outlet property="changePriceDay" destination="8tC-ly-UJQ" id="jie-Rx-Hsk"/>
+                        <outlet property="changePriceDayPer" destination="LNT-Cv-DXF" id="asR-YK-9f6"/>
+                        <outlet property="changePriceMonth" destination="kRu-g2-CNl" id="lbM-3g-TXe"/>
+                        <outlet property="changePriceMonthPer" destination="Nd5-yK-6Ab" id="zj7-tg-tt6"/>
+                        <outlet property="changePriceWeek" destination="7BX-gt-YvM" id="X2s-9K-nzq"/>
+                        <outlet property="changePriceWeekMonth" destination="p9M-Wn-pmi" id="Skc-eJ-A1Y"/>
+                        <outlet property="changePriceWeekPer" destination="p9M-Wn-pmi" id="P3i-BV-Yl6"/>
+                        <outlet property="currencyPicker" destination="3xj-mP-ocD" id="UVC-aq-Mv7"/>
+                        <outlet property="priceLabel" destination="cgX-f6-BF0" id="76I-6K-2sR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gpr-rB-Fjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688.79999999999995" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitcoin.png" width="128" height="128"/>
+    </resources>
+</document>
